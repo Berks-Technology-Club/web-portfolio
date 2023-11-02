@@ -51,7 +51,7 @@
             height: 50vh;
         }
         .projects {
-            height: 50vh
+            height: 120vh
         }
 
         .about-me-text {
@@ -89,6 +89,14 @@
             color: inherit;
         }
 
+        .headshot {
+            width: auto;
+            height: 200px;
+            border-radius: 50%;
+            margin-top: 50px;
+            
+        }
+
     </style>
 
 
@@ -97,25 +105,101 @@
     <div class="container-fluid border border-dark profile">
 
         <div class="container-sm">
-            <h1 class="name">Matthew Blake</h1>
-            <h2 class="tagline">Fall-Stack Developer</h2>
+            <div class="row">
+                <div class="col">
+                    <h1 class="name">Matthew Blake</h1>
+                    <h2 class="tagline">Fall-Stack Developer</h2>
 
-            <div type="button" class="btn"> <a href="#about-me">About Me</a></div>
+                    <div type="button" class="btn"> <a href="#about-me">About Me</a></div>
+
+                </div>
+
+                <div class="col">
+                    <!--<img src="/src/images/p1.png" alt="">-->
+                </div>
+                    
+            </div>
+            
         </div>
         
     </div>
     <div class="container-fluid about-me" id="about-me">
 
         <div class="container-sm">
-            <h1 class="about-me-text">About Me</h1>
-            <p>Hi! My name is Matthew Blake. I am a Full-Stack Software developer and a Cybersecurity Student at pennn State Berks! I am prfficeint in python and web development, and one of my favorite sports is football.</p>
+            
+
+            <div class="row">
+                <div class="col">
+                    <h1 class="about-me-text">About Me</h1>
+                    <p>Hi! My name is Matthew Blake. I am a Full-Stack Software developer and a Cybersecurity Student at pennn State Berks! I am prfficeint in python and web development, and one of my favorite sports is football.</p>
+            
+                </div>
+
+                <div class="col-2">
+                    
+                    <img src="/src/images/headshot.jpg" class="headshot" alt="headshot">
+                </div>
+
+            </div>
+            
         </div>
        
     </div>
     <div class="container-fluid projects">
 
+        
         <div class="container-sm">
             <h1>Projects</h1>
+
+            <div class="row">
+                
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/src/images/p1.png" alt="Card image cap">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text"></p><a href="https://github.com/Trend-Set/Trendset.tech">Go somewhere</a></p>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/src/images/p1.png" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="https://github.com/Trend-Set/Trendset.tech">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/src/images/p1.png" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="https://github.com/Trend-Set/Trendset.tech">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/src/images/p1.png" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="https://github.com/Trend-Set/Trendset.tech">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                
+            
+            </div>
+            
+
         </div>
     </div>
     <div class="container-fluid contact">
