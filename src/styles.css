@@ -105,6 +105,12 @@ a {
     margin-left: 60px;
 }
 
+.headshot-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo {
     max-height: 50px;
     max-width: auto;
@@ -113,6 +119,10 @@ a {
 .link {
     color: #fc9228;
     font-weight: 600;
+}
+
+.link:active {
+    color: #f8c38e;
 }
 
 .card {
