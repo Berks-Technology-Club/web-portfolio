@@ -43,12 +43,28 @@ h1 {
 
 .about-me-text {
     padding-top: 50px;
+      /* center mobile text */
+      @media screen and (max-width:767px) {
+        text-align: center !important;
+    }
+    .fe-block.fe-block-f56f8bdbd32d6261f262 * {
+        text-align: center !important;
+    }
 }
 .projects {
+    margin-top: 25px;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
 }
 .projects-text {
-    padding-bottom: 25px;
+    /* center mobile text */
+    @media screen and (max-width:767px) {
+            text-align: center !important;
+        }
+        .fe-block.fe-block-f56f8bdbd32d6261f262 * {
+            text-align: center !important;
+        }
 }
 
 .tagline {
