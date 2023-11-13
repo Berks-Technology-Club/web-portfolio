@@ -145,10 +145,12 @@ a {
 
 ::selection {
     background: rgb(255, 208, 191); /* WebKit/Blink Browsers */
+    color: black;
 }
 
 ::-moz-selection {
     background: rgb(255, 208, 191); /* Gecko Browsers */
+    color: black;
 }
 
 span.highlight {
