@@ -144,3 +144,10 @@ a {
     box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
     z-index: 3;
 }
+
+::selection {
+    background: rgb(255, 208, 191); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    background: rgb(255, 208, 191); /* Gecko Browsers */
+}
