@@ -3,151 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matthew Blake's Portfolio</title>
+    <title>Matthew Blake</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/src/styles.css">
-    <link rel="icon" href="src/images/favicon.png">
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark", style="background-color: #1c1f26;">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="#profile"> 
-            <img src="/src/images/logo-white.png" alt="Berks Technology Club Logo", class="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#profile">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#about-me">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Me</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <style>
+        .contact {
+            height: 40vh;
 
-    <!-- PROFILE -->
-    <div class="container-fluid profile", id="profile">
+            background-color: black;
+            color: white;
+
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .email {
+            display: flex;
+            justify-content: center;
+            font-size: 20pt;
+        }
+
+        h1 {
+            font-size: 50pt;
+            font-weight: bold;
+        }
+
+        .name {
+            display: flex;
+
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            
+            height: 100vh;
+
+            background-color: #232936;
+            color: white;
+        }
+
+        .about-me {
+            height: 50vh;
+        }
+        .projects {
+            margin-bottom: 50px;
+        }
+
+        .about-me-text {
+            padding-top: 50px;
+        }
+
+        .tagline {
+            display: flex;
+        }
+
+        p {
+            font-size: 18pt;
+        }
+
+        .btn {
+            background-color: #fc9228;
+            color: white;
+
+            border-radius: 30px;
+            width: 200px;
+            height: 55px;
+
+            font-size: 20pt;
+
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            color: #fc9228;
+            background-color: white; 
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .headshot {
+            height: 200px;
+            width: auto;
+            border-radius: 50%;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+
+       
+    </style>
+
+    <div class="container-xxl">
+        <nav class="navbar navbar-expand-lg navbar-light", style="background-color :#e3f2fd;">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+
+
+    <div class="container-fluid border border-dark profile">
+
         <div class="container-sm">
+            <div class="row"></div>
             <h1 class="name">Matthew Blake</h1>
-            <h2 class="tagline">Programmer, IT Professional</h2>
+            <h2 class="tagline">Fall-Stack Developer</h2>
+
             <div type="button" class="btn"> <a href="#about-me">About Me</a></div>
         </div>
+        
     </div>
-
-    <!-- ABOUT ME -->
     <div class="container-fluid about-me" id="about-me">
-        <div class="container-sm">
-            <div class="row">
-                <div class="col-md-9 text-left custom-mobile-center">
-                    <h1 class="about-me-text">About Me</h1>
-                    <p>Hi! My name is Matthew Blake. I am a Security Risk Analyst Intern at Exelon and a Cybersecurity Student at Penn State ! I am profficeint in web development, Azure ActiveDirectory, and data analysis with Python.</p>
-                </div>
-                <div class="col-md-3 col-sm-12 headshot-col">
-                    <img src="/src/images/mini.png" class="headshot">
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- PROJECTS -->
-    <div class="container-fluid projects", id="projects">
+        <div class="container-sm ">
+            <img src="/src/images/headshot.jpg" alt="" style="display:inline-block" class="float-end headshot">
+
+                    <h1 class="about-me-text">About Me</h1>
+                    
+                    <p>Hi! My name is Matthew Blake. I am a Full-Stack Software developer and a Cybersecurity Student at Penn State Berks! I am prfficeint in python and web development, and one of my favorite sports is football.</p>
+            </div>       
+    </div>
+    <div class="container-fluid projects">
+
+        
         <div class="container-sm">
+            <h1>Projects</h1>
+
             <div class="row">
-                <div class="col-md-9 text-left custom-mobile-center">
-                    <h1 class="projects-text">Projects</h1>
-                </div>
-            </div>
-             
-            <div class="row">
-                <!-- 1: FIM -->
-                <div class="col projects">
-                    <div class="card h-100" style="width: 18rem;">
-                        <img class="card-img-top border-bottom" src="/src/images/sentinel-mini.png" alt="Card image cap">
-                        <div class="card-body text-secondary">
+                
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/src/images/p1.png" alt="Card image cap">
+                            <div class="card-body">
                             <h5 class="card-title">File Integrity Monitor</h5>
                             <p class="card-text">A java program that will watch folders that the user specifies, and notify them of any changes to that folder.</p>
-                        </div>
-                        <div class="card-footer"> 
-                            <small>
-                                <a href="https://github.com/bmattblake/Sentinel-File-Inegrity-Monitor" target="_blank" class="link">View Project On GitHub</a>
-                            </small>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2: KEYLOGGER -->
-                <div class="col projects">
-                    <div class="card h-100" style="width: 18rem;">
-                        <img class="card-img-top border-bottom" src="/src/images/keylogger-mini.png" alt="Card image cap">
-                        <div class="card-body text-secondary">
-                            <h5 class="card-title">Keylogger</h5>
-                            <p class="card-text">Python script that will log keystrokes, and send data to attacker via SMTP.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small>
-                                <a href="https://github.com/bmattblake/Cypher-Keylogger" target="_blank" class="link">View Project On GitHub</a>
-                            </small>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3. DOS SCRIPT -->
-                <div class="col projects">
-                    <div class="card h-100" style="width: 18rem;">
-                        <img class="card-img-top border-bottom " src="/src/images/DoS-mini.png" alt="Card image cap">
-                        <div class="card-body text-secondary">
-                            <h5 class="card-title">Dos Script</h5>
-                            <p class="card-text">Sends padded UDP packets to target machine at a rapid rate.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small>
-                                <a href="https://github.com/bmattblake/Cypher-Keylogger" target="_blank" class="link">View Project On GitHub</a>
-                            </small>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- TRENDSET -->
-                <div class="col projects">
-                     <div class="card h-100" style="width: 18rem;">
-                            <img class="card-img-top border-bottom" src="/src/images/trendset.png" alt="Card image cap">
-                            <div class="card-body text-secondary">
-                                <h5 class="card-title">Trend-Set</h5>
-                                <p class="card-text">Website that can generate AI Logos and slogans for companies and freelancers.</p>
-                            </div>
-                            <div class="card-footer">
-                                <small>  
-                                    <a href="https://github.com/Trend-Set/Trendset.tech" target="_blank" class="link">View Project On GitHub</a>
-                                </small>
+                            <p class="card-text"></p><a href="https://github.com/bmattblake/Sentinel-File-Inegrity-Monitor">Link To Project</a></p>
                             </div>
                         </div>
                     </div>
+                
+                
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/src/images/p2.png" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Keylogger</h5>
+                        <p class="card-text">Python script that will log keystrokes, and send data to attacker via SMTP.</p>
+                        <a href="https://github.com/Trend-Set/Trendset.tech">Link To Project</a>
+                        </div>
+                    </div>
                 </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/src/images/p3.png" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Dos Script</h5>
+                        <p class="card-text">Sends padded UDP packets to target machine at a rapid rate.</p>
+                        <a href="https://github.com/Trend-Set/Trendset.tech">Link To Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                     <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="/src/images/p4.png" alt="Card image cap">
+                            <div class="card-body">
+                            <h5 class="card-title">Trend-Set</h5>
+                            <p class="card-text">Website that can generate AI Logos and slogans for companies and freelancers.</p>
+                            <a href="https://github.com/Trend-Set/Trendset.tech">Link To Project</a>
+                        </div>
+                    </div>
+                </div>
+            
+                </div>
+                
+            
             </div>
-        </div>
-    </div>
+            
 
-    <!-- CONTACT -->
-    <div class="container-fluid contact", id="contact">
+        </div>
+    <div class="container-fluid contact">
         <div class="comtainer-fluid">
             <h1 class="fw-bold">Contact Me</h1>
             <p class="fs-3">
-                <a href="mailto:matthew.blake@blake-tech.com" class="email">matthew.blake@blake-tech.com</a>
+                mhb5331@psu.edu <br>
+                (xxx)-xxx-xxxx
             </p>
         </div>
+            
     </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
