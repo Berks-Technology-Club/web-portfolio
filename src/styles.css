@@ -45,13 +45,6 @@ h1 {
 
 .about-me-text {
     padding-top: 50px;
-      /* center mobile text */
-      @media screen and (max-width:767px) {
-        text-align: center !important;
-    }
-    .fe-block.fe-block-f56f8bdbd32d6261f262 * {
-        text-align: center !important;
-    }
 }
 .projects {
     padding-top: 25px;
@@ -60,14 +53,15 @@ h1 {
     justify-content: center;
     background-color: white;
 }
-.projects-text {
+
     /* center mobile text */
-    @media screen and (max-width:767px) {
-            text-align: center !important;
-        }
-        .fe-block.fe-block-f56f8bdbd32d6261f262 * {
-            text-align: center !important;
-        }
+@media (max-width:767px) {
+    .projects-text {
+        text-align: center !important;
+    }
+    .about-me-text {
+        text-align: center !important;
+    } 
 }
 
 .tagline {
